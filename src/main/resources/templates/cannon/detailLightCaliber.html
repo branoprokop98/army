@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p th:text="${lightCaliber.id}"></p>
+    <p th:text="${lightCaliber.name}"></p>
+    <p th:text="${lightCaliber.getNation()}"></p>
+    <p th:text="${lightCaliber.getCaliber()}"></p>
+    <p th:text="${lightCaliber.getCadence()}"></p>
+    <p th:text="${lightCaliber.getRadiusOfImpact()}"></p>
+    <p th:text="${lightCaliber.getSpread()}"></p>
+
+    <td><a th:href="@{'/'}">Back</a></td>
+</body>
+</html>

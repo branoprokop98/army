@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <p th:text="${heavyCaliber.id}"></p>
+    <p th:text="${heavyCaliber.name}"></p>
+    <p th:text="${heavyCaliber.getNation()}"></p>
+    <p th:text="${heavyCaliber.getCaliber()}"></p>
+    <p th:text="${heavyCaliber.getCadence()}"></p>
+    <p th:text="${heavyCaliber.getNumberOfAmmunition()}"></p>
+    <p th:text="${heavyCaliber.getSpread()}"></p>
+
+    <td><a th:href="@{'/'}">Back</a></td>
+
+</body>
+</html>

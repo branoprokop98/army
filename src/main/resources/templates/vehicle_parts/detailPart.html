@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p th:text="${part.id}"></p>
+<p th:text="${part.name}"></p>
+<p th:text="${part.getCannon().getSpread()}"></p>
+<p th:text="${part.getCannon().getCadence()}"></p>
+<p th:text="${part.getCannon().getCaliber()}"></p>
+<p th:text="${part.getCannon().getNation()}"></p>
+<p th:text="${part.getView()}"></p>
+<p th:text="${part.getRotationSpeed()}"></p>
+
+</body>
+</html>

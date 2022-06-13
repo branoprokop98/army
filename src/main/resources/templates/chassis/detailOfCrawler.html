@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p th:text="${crawler.id}"></p>
+<p th:text="${crawler.name}"></p>
+<p th:text="${crawler.getCarryingCapacity()}"></p>
+<p th:text="${crawler.getRotationSpeed()}"></p>
+<p th:text="${crawler.getMaxSpeed()}"></p>
+<p th:text="${crawler.getBeltWidth()}"></p>
+
+<td><a th:href="@{'/'}">Back</a></td>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<p th:text="${tower.id}"></p>
+<p th:text="${tower.name}"></p>
+<p th:text="${tower.getCannon().getSpread()}"></p>
+<p th:text="${tower.getCannon().getCadence()}"></p>
+<p th:text="${tower.getCannon().getCaliber()}"></p>
+<p th:text="${tower.getCannon().getNation()}"></p>
+<p th:text="${tower.getView()}"></p>
+<p th:text="${tower.getRotationSpeed()}"></p>
+
+<td><a th:href="@{'/'}">Back</a></td>
+
+
+</body>
+</html>

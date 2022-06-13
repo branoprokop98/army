@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p th:text="${lightTank.id}"></p>
+<p th:text="${lightTank.name}"></p>
+<p th:text="${lightTank.getNation()}"></p>
+<p th:text="${lightTank.getPrice()}"></p>
+<p th:text="${lightTank.getLightWeightTower()}"></p>
+<p th:text="${lightTank.getWheelChassis()}"></p>
+<p th:text="${lightTank.getWheelChassis().getName()}"></p>
+<p th:text="${lightTank.getWheelChassis().getNumberOfWheels()}"></p>
+<p th:text="${lightTank.getWheelChassis().getMaxSpeed()}"></p>
+<p th:text="${lightTank.getWheelChassis().getRotationSpeed()}"></p>
+<p th:text="${lightTank.getWheelChassis().getCarryingCapacity()}"></p>
+
+<td><a th:href="@{'/'}">Back</a></td>
+
+</body>
+</html>

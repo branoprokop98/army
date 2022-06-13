@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p th:text="${wheel.id}"></p>
+<p th:text="${wheel.name}"></p>
+<p th:text="${wheel.getCarryingCapacity()}"></p>
+<p th:text="${wheel.getRotationSpeed()}"></p>
+<p th:text="${wheel.getMaxSpeed()}"></p>
+<p th:text="${wheel.getNumberOfWheels()}"></p>
+
+<td><a th:href="@{'/'}">Back</a></td>
+
+</body>
+</html>

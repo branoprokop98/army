@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h2>Tanks</h2>
+<tr th:each="tank: ${api.getTanks().entrySet()}">
+    <td th:text="${tank.key}"></td>
+    <td th:text="${tank.value.name}"></td>
+    <td th:text="${tank.value.getNation()}"></td>
+    <td><a th:href="@{'/detailTank/' + ${tank.key}}">detail</a></td>
+    <br>
+</tr>
+
+<h2>Cannons</h2>
+<tr th:each="canon: ${api.getCannons().entrySet()}">
+    <td th:text="${canon.key}"></td>
+    <td th:text="${canon.value.name}"></td>
+    <td th:text="${canon.value.getNation()}"></td>
+    <td><a th:href="@{'/detailCaliber/' + ${canon.key}}">detail</a></td>
+    <br>
+</tr>
+
+<h2>Chassis</h2>
+<tr th:each="canon: ${api.getChassis().entrySet()}">
+    <td th:text="${canon.key}"></td>
+    <td th:text="${canon.value.name}"></td>
+    <td><a th:href="@{'/detailChassis/' + ${canon.key}}">detail</a></td>
+    <br>
+</tr>
+
+<h2>Towers</h2>
+<tr th:each="canon: ${api.getTowers().entrySet()}">
+    <td th:text="${canon.key}"></td>
+    <td th:text="${canon.value.name}"></td>
+    <td><a th:href="@{'/detailTower/' + ${canon.key}}">detail</a></td>
+    <br>
+</tr>
+
+<h2>Parts</h2>
+<tr th:each="parts: ${api.getPartsMap().entrySet()}">
+    <td th:text="${parts.key}"></td>
+    <td th:text="${parts.value.name}"></td>
+    <td><a th:href="@{'/detailPart/' + ${parts.key}}">detail</a></td>
+    <br>
+</tr>
+
+<h2>Parts</h2>
+<tr th:each="vehicle: ${api.getVehicl   eMap().entrySet()}">
+    <td th:text="${vehicle.key}"></td>
+    <td th:text="${vehicle.value.name}"></td>
+    <td><a th:href="@{'/detailVehicle/' + ${vehicle.key}}">detail</a></td>
+    <br>
+</tr>
+
+</body>
+</html>
